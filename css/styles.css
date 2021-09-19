@@ -19,12 +19,35 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
 /* Header container */
 .header {
   display: flex;
+  height: 80px;
   align-items: center;
-  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
+
 /* Header logo */
 .header-logo {
   font-family: Raleway, sans-serif;
@@ -33,6 +56,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  margin-right: 93px;
 }
 
 .logo-accent {
@@ -57,6 +82,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.nav-list-item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .nav-list-link {
   color: inherit;
   text-decoration: none;
@@ -75,6 +104,8 @@ body {
 .header-contacts-list {
   display: flex;
   list-style: none;
+
+  margin-left: 331px;
 }
 
 .header-contacts-item {
@@ -82,6 +113,10 @@ body {
   font-size: var(--primary-text-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-contacts-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header-mail-link,
@@ -103,24 +138,41 @@ body {
 .hero {
   background-color: var(--primary-dark-color);
   color: var(--primary-white-color);
+
+  text-align: center;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  width: 696px;
+  padding-bottom: 30px;
+  margin: 0 auto;
 }
 
 .hero-button {
+  display: inline-block;
   font-weight: var(--primary-title-font-weight);
   font-size: var(--secondary-text-size);
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background: var(--accent-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  min-width: 200px;
+  min-height: 50px;
+  padding: 9px 31px;
+
   cursor: pointer;
 }
 
