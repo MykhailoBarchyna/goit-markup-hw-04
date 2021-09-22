@@ -144,7 +144,7 @@ img {
   color: var(--primary-white-color);
 
   text-align: center;
-  max-width: 1600px;
+  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 0 0 0;
@@ -236,6 +236,7 @@ img {
 .team {
   background-color: #f5f4fa;
 
+  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -282,7 +283,7 @@ img {
 
 .position {
   font-size: var(--secondary-text-size);
-  line-height: 1.19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
 
@@ -292,10 +293,15 @@ img {
 /* Footer container */
 footer {
   background-color: var(--primary-dark-color);
+
+  width: 1600px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 /* Footer logo */
 .footer-logo {
+  display: block;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-size: 26px;
@@ -305,6 +311,8 @@ footer {
   text-decoration: none;
 
   color: var(--primary-white-color);
+
+  margin-bottom: 20px;
 }
 
 .footer-contacts-list {
@@ -312,6 +320,8 @@ footer {
 }
 
 .footer-location {
+  display: block;
+
   font-style: normal;
   font-size: var(--primary-text-size);
   line-height: 1.71;
@@ -319,10 +329,14 @@ footer {
   text-decoration: none;
 
   color: var(--primary-white-color);
+
+  margin-bottom: 9px;
 }
 
 .footer-mail-link,
 .footer-phone-link {
+  display: block;
+
   font-style: normal;
   font-size: var(--primary-text-size);
   line-height: 1.71;
@@ -330,6 +344,10 @@ footer {
   text-decoration: none;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail-link {
+  margin-bottom: 9px;
 }
 
 .footer-mail-link:hover,
