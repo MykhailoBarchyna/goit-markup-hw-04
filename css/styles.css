@@ -31,6 +31,10 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -143,6 +147,9 @@ p {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 0 0 0;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 
 .hero-title {
@@ -154,7 +161,6 @@ p {
 
   width: 696px;
   padding-bottom: 30px;
-  margin: 0 auto;
 }
 
 .hero-button {
@@ -178,7 +184,15 @@ p {
 
 /* Advantages */
 .advantages-list {
+  display: flex;
   list-style: none;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-list-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .advantages-list-title {
@@ -194,6 +208,9 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
+  width: 270px;
+  height: 75px;
 }
 
 /* Activities */
@@ -203,15 +220,24 @@ p {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 .activities-list {
+  display: flex;
   list-style: none;
+
+  justify-content: space-between;
+  padding-bottom: 94px;
 }
 
 /* Team */
 .team {
   background-color: #f5f4fa;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -220,10 +246,27 @@ p {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .team-list {
+  display: flex;
   list-style: none;
+}
+
+.team-list-item {
+  width: 270px;
+  height: 368px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .employee {
@@ -231,12 +274,17 @@ p {
   font-size: var(--secondary-title-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .position {
   font-size: var(--secondary-text-size);
   line-height: 1.19px;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--primary-text-color);
 }
