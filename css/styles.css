@@ -191,8 +191,8 @@ img {
   padding-bottom: 94px;
 }
 
-.advantages-list-item:not(:first-child) {
-  margin-left: 30px;
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-list-title {
@@ -228,15 +228,17 @@ img {
   display: flex;
   list-style: none;
 
-  justify-content: space-between;
   padding-bottom: 94px;
+}
+
+.activities-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Team */
 .team {
   background-color: #f5f4fa;
 
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -266,8 +268,8 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item:not(:first-child) {
-  margin-left: 30px;
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .employee {
@@ -358,8 +360,23 @@ footer {
 }
 
 /* Portfolio page */
+.filters {
+  width: 1600px;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .filters-list {
+  display: flex;
   list-style: none;
+
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-button {
@@ -371,6 +388,18 @@ footer {
 
   text-align: center;
   letter-spacing: 0.03em;
+
+  padding: 5px 21px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.filter-button:active {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button:hover,
@@ -381,7 +410,23 @@ footer {
 }
 
 .projects-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+}
+
+.projects-list-item {
+  width: 370px;
+
+  padding-bottom: 20px;
+}
+
+.projects-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-list-item:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
 }
 
 .projects-list-title {
@@ -389,6 +434,11 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .projects-list-text {
@@ -397,6 +447,9 @@ footer {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* visually-hidden */
