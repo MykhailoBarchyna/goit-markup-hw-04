@@ -139,6 +139,8 @@ ul {
 
 .header-mail-link,
 .header-phone-link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -154,17 +156,28 @@ ul {
 .header-phone-icon {
   margin-right: 10px;
   fill: currentColor;
+  align-self: center;
 }
 
 /* WebStudio page */
 
 /* Hero */
 .hero {
-  background-color: var(--primary-dark-color);
-  color: var(--primary-white-color);
-
-  text-align: center;
   max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: var(--primary-dark-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: var(--primary-white-color);
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
