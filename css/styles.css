@@ -63,11 +63,17 @@ ul {
 }
 
 /* Header container */
-.header {
+
+header {
   display: flex;
   align-items: center;
   height: 80px;
   border-bottom: 1px solid #ececec;
+}
+
+.header {
+  display: flex;
+  align-items: center;
 }
 
 /* Header logo */
@@ -163,7 +169,6 @@ ul {
 /* Hero */
 .hero {
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
   background-color: var(--primary-dark-color);
   background-image: linear-gradient(
@@ -348,10 +353,11 @@ ul {
 }
 
 .team-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
 
   color: #afb1b8;
@@ -514,10 +520,11 @@ footer {
 }
 
 .footer-social-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
 
   color: var(--primary-white-color);
@@ -587,10 +594,6 @@ footer {
   padding: 20px 24px;
 }
 
-.projects-list-item {
-  cursor: pointer;
-}
-
 .projects-list-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -599,10 +602,22 @@ footer {
   margin-bottom: 30px;
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus {
+.projects-list-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-list-link:hover,
+.projects-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-description {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .projects-list-title {
